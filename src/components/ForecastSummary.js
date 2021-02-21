@@ -4,7 +4,7 @@ import WeatherIcon from "react-icons-weather";
 import moment from "moment";
 
 const ForecastSummary = (props) => {
-  const { date, icon, temperature, description, onSelect } = props;
+  const { date, description, icon, temperature, onSelect } = props;
 
   return (
     <div className="forecast-summary" data-testid="forecast-summary" key={icon}>
