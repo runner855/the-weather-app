@@ -1,0 +1,19 @@
+.forecast-summaries {
+  display: flex;
+  justify-content: space-between;
+  border: solid 4px white;
+}
+.forecast-summaries {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button {
+  border-radius: 10px;
+  outline: none;
+}
+
+button:hover {
+  background-color: aqua;
+  color: royalblue;
+}
