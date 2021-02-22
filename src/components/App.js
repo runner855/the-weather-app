@@ -30,7 +30,7 @@ const App = ({ forecasts, location }) => {
 };
 
 App.propTypes = {
-  forecasts: PropTypes.arrayOf([
+  forecasts: PropTypes.arrayOf(
     PropTypes.shape({
       date: PropTypes.number,
       description: PropTypes.string,
@@ -39,8 +39,8 @@ App.propTypes = {
         max: PropTypes.number,
         min: PropTypes.number,
       }),
-    }),
-  ]).isRequired,
+    })
+  ).isRequired,
   location: PropTypes.shape({
     city: PropTypes.string,
     country: PropTypes.string,

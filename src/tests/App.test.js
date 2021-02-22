@@ -5,8 +5,8 @@ import { location, forecasts } from "../data/forecast.json";
 
 test("renders Weather App", () => {
   render(<App forecasts={forecasts} location={location} />);
-  const AppTitle = screen.getByText(/Weather App/i);
-  expect(AppTitle).toBeInTheDocument();
+  const appTitle = screen.getByText(/Weather App/i);
+  expect(appTitle).toBeInTheDocument();
 });
 
 describe("ForecastSummary", () => {
