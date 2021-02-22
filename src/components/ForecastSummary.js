@@ -25,8 +25,6 @@ const ForecastSummary = (props) => {
   );
 };
 
-export default ForecastSummary;
-
 ForecastSummary.propTypes = {
   date: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
@@ -37,3 +35,5 @@ ForecastSummary.propTypes = {
   }).isRequired,
   onSelect: PropTypes.func.isRequired,
 };
+
+export default ForecastSummary;

@@ -34,7 +34,7 @@ App.propTypes = {
     PropTypes.shape({
       date: PropTypes.number,
       description: PropTypes.string,
-      icon: PropTypes.number.toString(),
+      icon: PropTypes.string,
       temperature: PropTypes.shape({
         max: PropTypes.number,
         min: PropTypes.number,
