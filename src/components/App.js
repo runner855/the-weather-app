@@ -18,13 +18,13 @@ const App = ({ forecasts, location }) => {
 
   return (
     <div className="weather-app">
-      <h1 className="title">Weather App</h1>
+      <h1 className="app-title">Weather App</h1>
       <LocationDetails city={location.city} country={location.country} />
       <ForecastSummaries
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
       />
-      <ForecastDetails forecast={selectedForecast} />
+      {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
     </div>
   );
 };

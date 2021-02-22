@@ -25,10 +25,9 @@ const ForecastDetails = ({ forecast }) => {
         {`${humidity}%`}
       </div>
 
-      <div className="forecast-details__wind">
-        Wind:
-        {`${wind.speed}mph`}
-      </div>
+      <div className="forecast-details__wind__speed">{`${wind.speed}mph`}</div>
+
+      <div className="forecast-details__wind__direction">{wind.direction}</div>
     </div>
   );
 };
@@ -44,8 +43,8 @@ ForecastDetails.propTypes = {
       min: PropTypes.number,
     }).isRequired,
     wind: PropTypes.shape({
-      speed: PropTypes.number.isRequired,
-      direction: PropTypes.string.isRequired,
+      speed: PropTypes.number,
+      direction: PropTypes.string,
     }).isRequired,
   }).isRequired,
 };
