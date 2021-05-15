@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import getForecast from "../requests/getForecast";
+import React, { useState } from "react";
+import axios from "axios";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 
@@ -10,10 +10,6 @@ const App = () => {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
-
-  useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
-  }, []);
 
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate

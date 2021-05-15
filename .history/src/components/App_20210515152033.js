@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import getForecast from "../requests/getForecast";
+import axios from "axios";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 
